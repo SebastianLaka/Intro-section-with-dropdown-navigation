@@ -36,7 +36,6 @@ li {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 2em 0;
   }
   .site-container .nav__hamburger-icon {
     border: none;
