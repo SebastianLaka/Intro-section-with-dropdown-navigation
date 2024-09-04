@@ -37,7 +37,7 @@ li {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 1.5em 1em;
+    padding: 1.5em 1.25em 1.75em;
   }
   .site-container .nav__hamburger-icon {
     border: none;
@@ -46,5 +46,11 @@ li {
   }
   .site-container .nav .nav-links {
     display: none;
+  }
+  .site-container__image {
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
