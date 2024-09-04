@@ -3,12 +3,18 @@
 @use "./colors" as *;
 @media (max-width: 576px) {
   .site-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
     height: 100svh;
+    padding: 1.5em 0;
     .nav {
       display: flex;
       justify-content: space-between;
-      padding: 1.5em 1.25em 1.75em;
+      width: 100%;
+      padding: 0 1.25em;
       &__hamburger-icon {
         border: none;
         background-color: transparent;
@@ -25,8 +31,35 @@
     }
     &__image{
         display: block;
-        object-fit: cover;
+        object-fit: contain;
         max-width: 100%;
+        height: auto;
+    }
+    .description-container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        height: 25%;
+        text-align: center;
+        padding: 0 1em;
+        &__button{
+            padding: .75em 1.5em;
+            border-radius: .9em;
+            color: $primary-White;
+            background-color: black;
+            border: none;
+        }
+    }
+    .logo-container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 1em;
+        &__logo{
+            height: 1.75em;
+            width: 4em;
+        }
     }
   }
 }
