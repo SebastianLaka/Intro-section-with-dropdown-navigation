@@ -1,20 +1,27 @@
-@use './reset' as *;
-@use './fonts' as *;
-@use './colors' as *;
-@media(min-width: 280px){
-    .site-container{
-        padding: 1em;
-    .nav{
-        display: flex;
-        justify-content: space-between;
-        &__hamburger-icon{
-            border: none;
-            background-color: transparent;
-            cursor: pointer;
-        }
-        .nav-links{
-            display: none;
-        }
+@use "./reset" as *;
+@use "./fonts" as *;
+@use "./colors" as *;
+@media (max-width: 576px) {
+  .site-container {
+    position: relative;
+    height: 100svh;
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 1.5em 1em;
+      &__hamburger-icon {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+      }
+      .nav-links {
+        display: none;
+        // position: absolute;
+        // top: 0;
+        // bottom: 0;
+        // right: 0;
+        // left: 0;
+      }
     }
-}
+  }
 }

@@ -25,9 +25,10 @@ li {
   list-style-type: none;
 }
 
-@media (min-width: 280px) {
+@media (max-width: 576px) {
   .site-container {
-    padding: 1em;
+    position: relative;
+    height: 100svh;
   }
   .site-container .nav {
     display: -webkit-box;
@@ -36,6 +37,7 @@ li {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding: 1.5em 1em;
   }
   .site-container .nav__hamburger-icon {
     border: none;
