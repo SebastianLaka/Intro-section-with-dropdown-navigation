@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
-    height: 100svh;
+    min-height: 100svh;
     padding: 1.5em 0;
     .nav {
       display: flex;
@@ -37,12 +37,15 @@
     }
     .description-container{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
         flex-direction: column;
         height: 25%;
         text-align: center;
         padding: 0 1em;
+        &__header{
+          font-size: 2.5rem;
+        }
         &__description{
           padding-bottom: .5em;
         }
@@ -56,14 +59,11 @@
         }
     }
     .logo-container{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        padding: 0 1em;
-        &__logo{
-            height: 1.75em;
-            width: 4em;
-        }
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 0 1em;
     }
   }
 }
