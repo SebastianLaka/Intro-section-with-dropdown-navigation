@@ -46,7 +46,6 @@ li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 0.75em 0;
-  position: relative;
   min-height: 100svh;
   padding: 1.5em 0;
 }
@@ -61,30 +60,22 @@ li {
     position: relative;
     width: 100%;
     padding: 0 1.25em;
-    z-index: 0;
   }
   .site-container .nav__hamburger-icon {
     border: none;
     background-color: transparent;
     cursor: pointer;
   }
-  .site-container .nav .nav-links {
-    position: absolute;
-    top: -100%;
+  .site-container .nav .nav-container {
+    position: fixed;
     left: 25%;
+    right: 0;
+    top: 0;
+    bottom: 0;
     background-color: hsl(0, 0%, 98%);
-    width: 75%;
-    min-height: 100.4svh;
   }
-  .site-container .nav::before {
-    position: absolute;
-    content: "";
-    top: -100%;
-    left: 0;
-    width: 25%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1;
-    height: 100.4svh;
+  .site-container .nav .nav-container .nav-links {
+    width: 75%;
   }
 }
 @media (max-width: 750px) {
