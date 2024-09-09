@@ -58,8 +58,10 @@ li {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    position: relative;
     width: 100%;
     padding: 0 1.25em;
+    z-index: 0;
   }
   .site-container .nav__hamburger-icon {
     border: none;
@@ -67,7 +69,22 @@ li {
     cursor: pointer;
   }
   .site-container .nav .nav-links {
-    display: none;
+    position: absolute;
+    top: -100%;
+    left: 25%;
+    background-color: hsl(0, 0%, 98%);
+    width: 75%;
+    min-height: 100.4svh;
+  }
+  .site-container .nav::before {
+    position: absolute;
+    content: "";
+    top: -100%;
+    left: 0;
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    height: 100.4svh;
   }
 }
 @media (max-width: 750px) {
