@@ -32,7 +32,7 @@
         bottom: 0;
         background-color: $primary-White;
         padding: 1.5em;
-        // transform: translateX(-500px);
+        // transform: translateX(500px);
         &__close-icon {
           margin-left: auto;
           width: 1.5em;
@@ -45,32 +45,45 @@
     .nav-dropdown-features,
     .nav-dropdown-company,
     .nav-dropdown-careers,
-    .nav-dropdown-about{
-      padding: .75em 0;
+    .nav-dropdown-about {
+      padding: 0.75em 0;
       &__item {
         padding: 0.75em 0;
       }
-      &__ref-link{
+      &__ref-link {
         text-decoration: none;
         color: $primary-Gray;
       }
-      &--arrow-down{
-        padding: 0 0 .1em .5em
+      &--arrow-down {
+        padding: 0 0 0.1em 0.5em;
+      }
+    }
+    .dropdown-company-features,
+    .dropdown-company-options {
+      display: flex;
+      flex-direction: column;
+      padding: 1em 0 0 1em;
+      color: $primary-Gray;
+      gap: 1em 0;
+    }
+    .dropdown-company-features {
+      &--icon {
+        padding: 0 1em 0 0;
       }
     }
   }
-  .nav-cta{
+  .nav-cta {
     display: flex;
     flex-direction: column;
     gap: 1em 0;
     &__login,
-    &__register{
-      border: .125em solid $primary-Gray;
-      border-radius: .8em;
+    &__register {
+      border: 0.125em solid $primary-Gray;
+      border-radius: 0.8em;
       width: 80%;
-      padding: .75em 1.5em;
+      padding: 0.75em 1.5em;
     }
-    &__login{
+    &__login {
       border: none;
     }
   }
