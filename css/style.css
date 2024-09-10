@@ -69,13 +69,10 @@ li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     position: fixed;
     left: 36%;
     right: 0;
@@ -85,6 +82,7 @@ li {
     padding: 1.5em;
   }
   .site-container .nav .nav-container__close-icon {
+    margin-left: auto;
     width: 1.5em;
     height: 1.3em;
   }

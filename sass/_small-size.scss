@@ -23,8 +23,7 @@
       }
       .nav-container {
         display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
+        flex-direction: column;
         position: fixed;
         left: 36%;
         right: 0;
@@ -34,6 +33,7 @@
         padding: 1.5em;
         // transform: translateX(-500px);
         &__close-icon{
+          margin-left: auto;
           width: 1.5em;
           height: 1.3em;
         }
