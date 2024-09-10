@@ -85,8 +85,8 @@ li {
     padding: 1.5em;
   }
   .site-container .nav .nav-container__close-icon {
-    width: 2em;
-    height: 1.125em;
+    width: 1.5em;
+    height: 1.3em;
   }
 }
 @media (max-width: 750px) {
@@ -162,4 +162,13 @@ li {
 }
 .site-container .logo-container__logo {
   min-width: 1.25em;
+}
+
+@media (min-width: 992px) {
+  .site-container .nav__hamburger-icon {
+    display: none;
+  }
+  .site-container .nav .nav-container__close-icon {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

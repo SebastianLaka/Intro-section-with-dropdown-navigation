@@ -14,7 +14,6 @@
     .nav {
       display: flex;
       justify-content: space-between;
-      
       width: 100%;
       padding: 0 1.25em;
       &__hamburger-icon {
@@ -35,8 +34,8 @@
         padding: 1.5em;
         // transform: translateX(-500px);
         &__close-icon{
-          width: 2em;
-          height: 1.125em;
+          width: 1.5em;
+          height: 1.3em;
         }
       }
     }
