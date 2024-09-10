@@ -24,6 +24,7 @@
       .nav-container {
         display: flex;
         flex-direction: column;
+        gap: 1.75em 0;
         position: fixed;
         left: 36%;
         right: 0;
@@ -32,12 +33,45 @@
         background-color: $primary-White;
         padding: 1.5em;
         // transform: translateX(-500px);
-        &__close-icon{
+        &__close-icon {
           margin-left: auto;
           width: 1.5em;
           height: 1.3em;
         }
       }
+    }
+  }
+  .nav-dropdown {
+    .nav-dropdown-features,
+    .nav-dropdown-company,
+    .nav-dropdown-careers,
+    .nav-dropdown-about{
+      padding: .75em 0;
+      &__item {
+        padding: 0.75em 0;
+      }
+      &__ref-link{
+        text-decoration: none;
+        color: $primary-Gray;
+      }
+      &--arrow-down{
+        padding: 0 0 .1em .5em
+      }
+    }
+  }
+  .nav-cta{
+    display: flex;
+    flex-direction: column;
+    gap: 1em 0;
+    &__login,
+    &__register{
+      border: .125em solid $primary-Gray;
+      border-radius: .8em;
+      width: 80%;
+      padding: .75em 1.5em;
+    }
+    &__login{
+      border: none;
     }
   }
   @media (max-width: 750px) {

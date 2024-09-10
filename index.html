@@ -20,15 +20,20 @@
             <button class="nav__hamburger-icon">
                 <img src="./img/icon-menu.svg" alt="Hamburger icon for nav at mobile">
             </button>
-        <div class="nav-container">
-            <img src="./img/icon-close-menu.svg" alt="" class="nav-container__close-icon">
-            <ul class="nav-links">
-                <li class="nav-links__item"><a href="#">Home</a></li>
-                <li class="nav-links__item"><a href="#">About</a></li>
-                <li class="nav-links__item"><a href="#">Services</a></li>
-                <li class="nav-links__item"><a href="#">Contact</a></li>
-            </ul>
-        </div>
+            <div class="nav-container">
+                <img src="./img/icon-close-menu.svg" alt="" class="nav-container__close-icon">
+                <ul class="nav-dropdown">
+                    <li class="nav-dropdown-features"><a class="nav-dropdown-features__ref-link" data-dropdown-item href="#">Features<img src="./img/icon-arrow-down.svg" class="nav-dropdown-features--arrow-down"></a></li>
+                    <li class="nav-dropdown-company"><a class="nav-dropdown-company__ref-link" data-dropdown-item href="#">Company<img src="./img/icon-arrow-down.svg" class="nav-dropdown-company--arrow-down"></a></li>
+                    <li class="nav-dropdown-careers"><a class="nav-dropdown-careers__ref-link" data-dropdown-item href="#">Careers</a></li>
+                    <li class="nav-dropdown-about"><a class="nav-dropdown-about__ref-link" data-dropdown-item href="#">About</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <button class="nav-cta__login">Login</button>
+                    <button class="nav-cta__register">Register</button>
+                </div>
+                
+            </div>
         </nav>
         <img src="./img/image-hero-mobile.png" alt="Hero image" class="site-container__image-mobile">
         <img src="./img/image-hero-desktop.png" alt="Hero image" class="site-container__image-desktop">

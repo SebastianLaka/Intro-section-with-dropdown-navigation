@@ -24,11 +24,12 @@ button {
   display: block;
 }
 
-li {
+ul, li {
   margin: 0;
   padding: 0;
   text-indent: 0;
   list-style-type: none;
+  font-family: "Epilogue", sans-serif;
 }
 
 .site-container {
@@ -73,6 +74,7 @@ li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 1.75em 0;
     position: fixed;
     left: 36%;
     right: 0;
@@ -86,6 +88,50 @@ li {
     width: 1.5em;
     height: 1.3em;
   }
+}
+.site-container .nav-dropdown .nav-dropdown-features,
+.site-container .nav-dropdown .nav-dropdown-company,
+.site-container .nav-dropdown .nav-dropdown-careers,
+.site-container .nav-dropdown .nav-dropdown-about {
+  padding: 0.75em 0;
+}
+.site-container .nav-dropdown .nav-dropdown-features__item,
+.site-container .nav-dropdown .nav-dropdown-company__item,
+.site-container .nav-dropdown .nav-dropdown-careers__item,
+.site-container .nav-dropdown .nav-dropdown-about__item {
+  padding: 0.75em 0;
+}
+.site-container .nav-dropdown .nav-dropdown-features__ref-link,
+.site-container .nav-dropdown .nav-dropdown-company__ref-link,
+.site-container .nav-dropdown .nav-dropdown-careers__ref-link,
+.site-container .nav-dropdown .nav-dropdown-about__ref-link {
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+}
+.site-container .nav-dropdown .nav-dropdown-features--arrow-down,
+.site-container .nav-dropdown .nav-dropdown-company--arrow-down,
+.site-container .nav-dropdown .nav-dropdown-careers--arrow-down,
+.site-container .nav-dropdown .nav-dropdown-about--arrow-down {
+  padding: 0 0 0.1em 0.5em;
+}
+.site-container .nav-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em 0;
+}
+.site-container .nav-cta__login, .site-container .nav-cta__register {
+  border: 0.125em solid hsl(0, 0%, 41%);
+  border-radius: 0.8em;
+  width: 80%;
+  padding: 0.75em 1.5em;
+}
+.site-container .nav-cta__login {
+  border: none;
 }
 @media (max-width: 750px) {
   .site-container__image-mobile {
