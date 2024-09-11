@@ -1,13 +1,17 @@
 @use "./reset" as *;
 @use "./fonts" as *;
 @use "./colors" as *;
+@use "./mixins" as *;
 @media (min-width: 992px) {
   .site-container {
-    padding: 1em;
+    height: 100svh;
+    padding: 0 1em;
+    gap: 0;
     .nav {
       display: flex;
       justify-content: space-between;
       width: 100%;
+      padding: 1em 0;
       &__hamburger-icon {
         display: none;
       }
@@ -40,6 +44,43 @@
             width: 100%;
           }
         }
+      }
+    }
+    .site-body {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      
+      justify-items: center;
+      align-items: start;
+      padding: 2em 0;
+      
+      &__image-desktop {
+        grid-column: 2/3;
+        grid-row: 0/1;
+        height: 82.5svh;
+        width: 100%;
+      }
+      .description-container {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-content: center;
+        align-items: start;
+        text-align: left;
+        height: 100%;
+        &__header {
+          font-size: 4.5rem;
+          line-height: 100%;
+          padding-right: 1.25em;
+        }
+        &__description{
+            width: 45ch;
+            padding: 0;
+        }
+        .logo-container {
+            justify-content: start;
+            gap: 0 3em;
+            align-self: flex-end;
+          }
       }
     }
   }
