@@ -201,12 +201,12 @@ ul, li {
   height: 25%;
   text-align: center;
   padding: 0 1em;
+  gap: 1em 0;
 }
 .site-container .site-body .description-container__header {
   font-size: 2rem;
 }
 .site-container .site-body .description-container__description {
-  padding-bottom: 0.5em;
   max-width: 65ch;
 }
 .site-container .site-body .description-container__button {
@@ -238,7 +238,7 @@ ul, li {
 @media (min-width: 992px) {
   .site-container {
     height: 100svh;
-    padding: 0 1em;
+    padding: 1em 2em;
     gap: 0;
   }
   .site-container .nav {
@@ -309,19 +309,21 @@ ul, li {
     grid-column: 2/3;
     grid-row: 0/1;
     height: 82.5svh;
-    width: 100%;
+    width: 95%;
   }
   .site-container .site-body .description-container {
     grid-column: 1/2;
     grid-row: 1/2;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
     text-align: left;
     height: 100%;
+    gap: 2.5em 0;
+    padding-top: 9.5em;
   }
   .site-container .site-body .description-container__header {
     font-size: 4.5rem;
@@ -337,8 +339,8 @@ ul, li {
         -ms-flex-pack: start;
             justify-content: start;
     gap: 0 3em;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
+    padding: 0;
+    margin-top: auto;
   }
 }
 .wrapper {
