@@ -225,10 +225,56 @@ ul, li {
 }
 
 @media (min-width: 992px) {
+  .site-container {
+    padding: 1em;
+  }
+  .site-container .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
   .site-container .nav__hamburger-icon {
     display: none;
   }
+  .site-container .nav .nav-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 1em;
+    width: 100%;
+    height: 5svh;
+  }
   .site-container .nav .nav-container__close-icon {
     display: none;
+  }
+  .site-container .nav .nav-container .nav-dropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 1em;
+    gap: 0 2em;
+  }
+  .site-container .nav .nav-container .nav-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 0 1em;
+  }
+  .site-container .nav .nav-container .nav-cta__login, .site-container .nav .nav-container .nav-cta__register {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
