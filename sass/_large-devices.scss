@@ -30,8 +30,9 @@
           .dropdown-company-features,
           .dropdown-company-options {
             display: none;
+            transition: color .3s; 
             padding: 1em 0 0 0;
-          }
+          } 
         }
         .nav-cta {
           @include flex-row-center;
@@ -73,6 +74,14 @@
         &__description{
             width: 45ch;
             padding: 0;
+        }
+        &__button{
+          transition: color .3s, background-color .3s, border .3s;
+        }
+        &__button:hover{
+          color: $primary-black;
+          background-color: $primary-White;
+          border: .1em solid $primary-black;
         }
         .logo-container {
             justify-content: start;
