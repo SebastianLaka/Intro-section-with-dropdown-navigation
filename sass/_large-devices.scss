@@ -5,8 +5,9 @@
 @media (min-width: 992px) {
   .site-container {
     height: 100svh;
-    padding: 1em 2em;
+    padding: 1em 2em 0 2em;
     gap: 0;
+    overflow-y: hidden;
     .nav {
       @include flex-between;
       width: 100%;
@@ -45,9 +46,9 @@
     .site-body {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      justify-items: center;
+ 
       align-items: start;
-      padding: 2em 0;
+      padding: 2em 0 0 0;
       
       &__image-desktop {
         grid-column: 2/3;
@@ -61,7 +62,7 @@
         justify-content: end;
         align-items: start;
         text-align: left;
-        height: 100%;
+        height: 97%;
         gap: 2.5em 0;
         padding-top: 9.5em;
         &__header {
