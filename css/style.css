@@ -146,6 +146,7 @@ ul, li {
   border-radius: 0.8em;
   width: 80%;
   padding: 0.75em 1.5em;
+  color: hsl(0, 0%, 41%);
   cursor: pointer;
 }
 .site-container .nav-cta__login {
@@ -304,6 +305,15 @@ ul, li {
   }
   .site-container .nav .nav-container .nav-cta__login, .site-container .nav .nav-container .nav-cta__register {
     width: 100%;
+    -webkit-transition: color 0.3s, font-weight 0.3s, border 0.3s;
+    transition: color 0.3s, font-weight 0.3s, border 0.3s;
+  }
+  .site-container .nav .nav-container .nav-cta__login:hover, .site-container .nav .nav-container .nav-cta__register:hover {
+    color: hsl(0, 0%, 8%);
+    font-weight: 700;
+  }
+  .site-container .nav .nav-container .nav-cta__register:hover {
+    border: 0.125em solid hsl(0, 0%, 8%);
   }
   .site-container .site-body {
     display: grid;

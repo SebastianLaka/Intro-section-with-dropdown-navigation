@@ -40,7 +40,17 @@
           &__login,
           &__register {
             width: 100%;
+            transition: color .3s, font-weight .3s, border .3s;
           }
+          &__login:hover,
+          &__register:hover{
+            color: $primary-black;
+            font-weight: $bold-weight;
+          }
+          &__register:hover{
+            border: .125em solid $primary-black;
+          }
+          
         }
       }
     }
