@@ -3,6 +3,7 @@
 @use './colors' as *;
 @use './small-size' as *;
 @use './large-devices' as *;
+
 .wrapper, .wrapper-nav {
     max-width: 1200px;
     width: 100%;
