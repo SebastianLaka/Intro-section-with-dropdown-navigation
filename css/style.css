@@ -170,6 +170,10 @@ ul, li {
   }
   .site-container .site-body__image-desktop {
     display: block;
+    -o-object-fit: contain;
+       object-fit: contain;
+    max-width: 100%;
+    height: auto;
   }
 }
 .site-container .site-body {
@@ -184,7 +188,7 @@ ul, li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 3em 0;
-  min-height: 90svh;
+  height: 90svh;
   width: 100%;
   padding: 1.5em 0 0 0;
 }
@@ -350,16 +354,16 @@ ul, li {
         -ms-flex-align: start;
             align-items: start;
     text-align: left;
-    height: 94%;
+    min-height: 94%;
     gap: 2em 0;
     padding-top: 5em;
   }
   .site-container .site-body .description-container__header {
-    font-size: 4.5rem;
+    font-size: 4rem;
     padding-right: 1.25em;
   }
   .site-container .site-body .description-container__description {
-    width: 45ch;
+    min-width: 45ch;
     padding: 0;
   }
   .site-container .site-body .description-container__button {

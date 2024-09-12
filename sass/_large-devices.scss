@@ -71,6 +71,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       padding: 2em 0 0 0;
+     
       &__image-desktop {
         grid-column: 2/3;
         grid-row: 0/1;
@@ -83,15 +84,15 @@
         justify-content: end;
         align-items: start;
         text-align: left;
-        height: 94%;
+        min-height: 94%;
         gap: 2em 0;
         padding-top: 5em;
         &__header {
-          font-size: 4.5rem;
+          font-size: 4rem;
           padding-right: 1.25em;
         }
         &__description{
-            width: 45ch;
+            min-width: 45ch;
             padding: 0;
         }
         &__button{
