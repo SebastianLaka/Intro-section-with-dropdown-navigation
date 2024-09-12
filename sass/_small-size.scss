@@ -3,8 +3,7 @@
 @use "./colors" as *;
 @use "./mixins" as *;
 .site-container {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   align-items: center;
   gap: 0.75em 0;
   min-height: 100svh;
@@ -12,8 +11,7 @@
   min-width: 100%;
   @media (max-width: 992px) {
     .nav {
-      display: flex;
-      justify-content: space-between;
+      @include flex-between;
       min-width: 100%;
       padding: 0 1.25em;
       &__hamburger-icon {
@@ -22,8 +20,7 @@
         cursor: pointer;
       }
       .nav-container {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         gap: 1.75em 0;
         position: fixed;
         left: 36%;
@@ -47,6 +44,7 @@
     .nav-dropdown-careers,
     .nav-dropdown-about {
       padding: 0.75em 0;
+      cursor: pointer;
       &__item {
         padding: 0.75em 0;
       }
@@ -60,8 +58,7 @@
     }
     .dropdown-company-features,
     .dropdown-company-options {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       padding: 1em 0 0 1em;
       color: $primary-Gray;
       gap: 1em 0;
@@ -73,8 +70,7 @@
     }
   }
   .nav-cta {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: 1em 0;
     &__login,
     &__register {
@@ -82,6 +78,7 @@
       border-radius: 0.8em;
       width: 80%;
       padding: 0.75em 1.5em;
+      cursor: pointer;
     }
     &__login {
       border: none;
@@ -108,18 +105,14 @@
     }
   }
   .site-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include flex-column-between;
     gap: 3em 0;
     min-height: 90svh;
     width: 100%;
-    padding-top: 1.5em;
+    padding: 1.5em 0 0 0;
     .description-container {
-      display: flex;
+      @include flex-between-center;
       flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
       height: 25%;
       text-align: center;
       padding: 0 1em;
@@ -142,11 +135,9 @@
         cursor: pointer;
       }
       .logo-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      @include flex-between-center;
       gap: 0 0.25em;
-      padding: 1em 0 1em 0;
+      padding: 1.5em 0 0 0;
       width: 100%;
       &__logo {
         min-width: 1.25em;
