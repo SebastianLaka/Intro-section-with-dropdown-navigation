@@ -80,8 +80,6 @@ ul, li {
     bottom: 0;
     background-color: hsl(0, 0%, 98%);
     padding: 1.5em;
-    -webkit-transform: translateX(1500px);
-            transform: translateX(1500px);
   }
   .site-container .nav .nav-container__close-icon {
     margin-left: auto;
