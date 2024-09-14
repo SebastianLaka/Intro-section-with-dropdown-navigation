@@ -32,8 +32,8 @@
         // transform: translateX(1500px);
         &__close-icon {
           margin-left: auto;
-          width: 1.5em;
-          height: 1.3em;
+          border: none;
+          cursor: pointer;
         }
       }
     }

@@ -83,8 +83,8 @@ ul, li {
   }
   .site-container .nav .nav-container__close-icon {
     margin-left: auto;
-    width: 1.5em;
-    height: 1.3em;
+    border: none;
+    cursor: pointer;
   }
 }
 .site-container .nav-dropdown .nav-dropdown-features,
