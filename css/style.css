@@ -50,6 +50,7 @@ ul, li {
 }
 @media (max-width: 992px) {
   .site-container .nav {
+    position: fixed;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -108,6 +109,18 @@ ul, li {
   .site-container .nav .show-slider {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  }
+  .site-container .nav .hide-slider {
+    -webkit-transform: translateX(1500px);
+            transform: translateX(1500px);
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   }
 }
 .site-container .nav-dropdown .nav-dropdown-features,
@@ -205,13 +218,10 @@ ul, li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   gap: 3em 0;
   height: 90svh;
   width: 100%;
-  padding: 1.5em 0 0 0;
+  padding: 3.5em 0 0 0;
 }
 .site-container .site-body .description-container {
   display: -webkit-box;

@@ -11,6 +11,7 @@
   min-width: 100%;
   @media (max-width: 992px) {
     .nav {
+      position: fixed;
       @include flex-between;
       min-width: 100%;
       padding: 0 1.25em;
@@ -50,13 +51,16 @@
             position: absolute;
             top: 5%;
             right: -2.5%;
-            
-            
           }
         }
       }
       .show-slider{
         transform: translateX(0px);
+        transition: transform 0.5s ease;
+      }
+      .hide-slider{
+        transform: translateX(1500px);
+        transition: transform 0.5s ease;
       }
     }
   }
@@ -128,11 +132,12 @@
     }
   }
   .site-body {
-    @include flex-column-between;
+    display: flex;
+    flex-direction: column;
     gap: 3em 0;
     height: 90svh;
     width: 100%;
-    padding: 1.5em 0 0 0;
+    padding: 3.5em 0 0 0;
     .description-container {
       @include flex-between-center;
       flex-direction: column;
