@@ -35,6 +35,9 @@
           border: none;
           cursor: pointer;
         }
+        .show-slider{
+          transform: translateX(0px);
+        }
       }
     }
   }

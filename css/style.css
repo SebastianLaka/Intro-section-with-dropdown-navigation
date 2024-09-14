@@ -86,6 +86,10 @@ ul, li {
     border: none;
     cursor: pointer;
   }
+  .site-container .nav .nav-container .show-slider {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
 }
 .site-container .nav-dropdown .nav-dropdown-features,
 .site-container .nav-dropdown .nav-dropdown-company,
