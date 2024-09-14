@@ -15,9 +15,16 @@
       min-width: 100%;
       padding: 0 1.25em;
       &__hamburger-icon {
+        position: relative;
+        padding: 1em;
         border: none;
         background-color: transparent;
         cursor: pointer;
+        &::before{
+          content: url(../img/icon-menu.svg);
+          position: absolute;
+          top: 0;left: 0;
+        }
       }
       .nav-container {
         @include flex-column;
@@ -29,15 +36,15 @@
         bottom: 0;
         background-color: $primary-White;
         padding: 1.5em;
-        // transform: translateX(1500px);
+        transform: translateX(1500px);
         &__close-icon {
           margin-left: auto;
           border: none;
           cursor: pointer;
         }
-        .show-slider{
-          transform: translateX(0px);
-        }
+      }
+      .show-slider{
+        transform: translateX(0px);
       }
     }
   }

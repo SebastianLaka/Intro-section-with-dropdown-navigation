@@ -60,9 +60,17 @@ ul, li {
     padding: 0 1.25em;
   }
   .site-container .nav__hamburger-icon {
+    position: relative;
+    padding: 1em;
     border: none;
     background-color: transparent;
     cursor: pointer;
+  }
+  .site-container .nav__hamburger-icon::before {
+    content: url(../img/icon-menu.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
   }
   .site-container .nav .nav-container {
     display: -webkit-box;
@@ -80,13 +88,15 @@ ul, li {
     bottom: 0;
     background-color: hsl(0, 0%, 98%);
     padding: 1.5em;
+    -webkit-transform: translateX(1500px);
+            transform: translateX(1500px);
   }
   .site-container .nav .nav-container__close-icon {
     margin-left: auto;
     border: none;
     cursor: pointer;
   }
-  .site-container .nav .nav-container .show-slider {
+  .site-container .nav .show-slider {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
   }
