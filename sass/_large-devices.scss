@@ -9,6 +9,7 @@
     gap: 0;
     .nav {
       @include flex-between;
+      align-items: center;
       width: 100%;
       padding: 1em 0;
       &__hamburger-icon {
