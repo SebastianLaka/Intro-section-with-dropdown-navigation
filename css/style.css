@@ -93,8 +93,17 @@ ul, li {
   }
   .site-container .nav .nav-container__close-icon {
     margin-left: auto;
+    position: relative;
+    padding: 1em;
     border: none;
+    background-color: transparent;
     cursor: pointer;
+  }
+  .site-container .nav .nav-container__close-icon::before {
+    content: url(../img/icon-close-menu.svg);
+    position: absolute;
+    top: 5%;
+    right: -2.5%;
   }
   .site-container .nav .show-slider {
     -webkit-transform: translateX(0px);

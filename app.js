@@ -8,3 +8,6 @@ burgerIcon.addEventListener('click', e =>{
         navContainer.classList.add('show-slider');
     }
 })
+closeNavIcon.addEventListener('click', ()=>{
+    navContainer.classList.remove('show-slider');
+})

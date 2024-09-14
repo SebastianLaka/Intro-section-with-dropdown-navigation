@@ -23,7 +23,8 @@
         &::before{
           content: url(../img/icon-menu.svg);
           position: absolute;
-          top: 0;left: 0;
+          top: 0;
+          left: 0;
         }
       }
       .nav-container {
@@ -39,8 +40,19 @@
         transform: translateX(1500px);
         &__close-icon {
           margin-left: auto;
+          position: relative;
+          padding: 1em;
           border: none;
+          background-color: transparent;
           cursor: pointer;
+          &::before{
+            content: url(../img/icon-close-menu.svg);
+            position: absolute;
+            top: 5%;
+            right: -2.5%;
+            
+            
+          }
         }
       }
       .show-slider{
