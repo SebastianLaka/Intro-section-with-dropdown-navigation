@@ -40,13 +40,8 @@ ul, li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 0.75em 0;
   min-height: 100svh;
-  padding: 1.5em 0;
-  min-width: 100%;
+  padding: 1em 0;
 }
 @media (max-width: 992px) {
   .site-container .nav {
@@ -229,10 +224,8 @@ ul, li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 3em 0;
-  height: 90svh;
-  width: 100%;
-  padding: 3.5em 0 0 0;
+  min-height: 100%;
+  padding: 5.5em 0 0 0;
 }
 .site-container .site-body .description-container {
   display: -webkit-box;
@@ -248,10 +241,8 @@ ul, li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 25%;
   text-align: center;
-  padding: 0 1em;
-  gap: 1em 0;
+  padding: 2em 1em 0 1em;
 }
 .site-container .site-body .description-container__header {
   font-size: 2.25rem;
@@ -259,6 +250,7 @@ ul, li {
 .site-container .site-body .description-container__description {
   max-width: 65ch;
   font-size: 1.125rem;
+  padding: 1.5em 0;
 }
 .site-container .site-body .description-container__button {
   padding: 1em 1.5em;
@@ -281,7 +273,7 @@ ul, li {
       -ms-flex-align: center;
           align-items: center;
   gap: 0 0.25em;
-  padding: 1.5em 0 0 0;
+  padding: 3.5em 0 0 0;
   width: 100%;
 }
 .site-container .site-body .description-container .logo-container__logo {

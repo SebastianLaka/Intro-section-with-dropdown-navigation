@@ -4,11 +4,8 @@
 @use "./mixins" as *;
 .site-container {
   @include flex-column;
-  align-items: center;
-  gap: 0.75em 0;
   min-height: 100svh;
-  padding: 1.5em 0;
-  min-width: 100%;
+  padding: 1em 0;
   @media (max-width: 992px) {
     .nav {
       position: fixed;
@@ -28,7 +25,6 @@
           left: 0;
         }
       }
-
       .nav-container {
         @include flex-column;
         gap: 1.75em 0;
@@ -63,7 +59,7 @@
         left: -60%;
         bottom: 0;
         width: 60%;
-        background-color: rgba(0,0,0, .6);
+        background-color: rgba(0, 0, 0, 0.6);
         z-index: -1;
       }
       .show-slider {
@@ -144,25 +140,21 @@
     }
   }
   .site-body {
-    display: flex;
-    flex-direction: column;
-    gap: 3em 0;
-    height: 90svh;
-    width: 100%;
-    padding: 3.5em 0 0 0;
+    @include flex-column;
+    min-height: 100%;
+    padding: 5.5em 0 0 0;
     .description-container {
       @include flex-between-center;
       flex-direction: column;
-      height: 25%;
       text-align: center;
-      padding: 0 1em;
-      gap: 1em 0;
+      padding: 2em 1em 0 1em;
       &__header {
         font-size: 2.25rem;
       }
       &__description {
         max-width: 65ch;
         font-size: $basic-size;
+        padding: 1.5em 0;
       }
       &__button {
         padding: 1em 1.5em;
@@ -177,7 +169,7 @@
       .logo-container {
         @include flex-between-center;
         gap: 0 0.25em;
-        padding: 1.5em 0 0 0;
+        padding: 3.5em 0 0 0;
         width: 100%;
         &__logo {
           min-width: 1.25em;
