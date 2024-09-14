@@ -91,6 +91,7 @@ ul, li {
     padding: 1.5em;
     -webkit-transform: translateX(1500px);
             transform: translateX(1500px);
+    z-index: 0;
   }
   .site-container .nav .nav-container__close-icon {
     margin-left: auto;
@@ -105,6 +106,16 @@ ul, li {
     position: absolute;
     top: 5%;
     right: -2.5%;
+  }
+  .site-container .nav .nav-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -60%;
+    bottom: 0;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
   }
   .site-container .nav .show-slider {
     -webkit-transform: translateX(0px);
