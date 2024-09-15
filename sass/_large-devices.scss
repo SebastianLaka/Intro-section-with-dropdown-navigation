@@ -33,6 +33,9 @@
             transition: color .3s; 
             padding: 1em 0 0 0;
           } 
+          .active-dropdown{
+            display: block;
+          }
           .nav-dropdown-features__ref-link,
           .nav-dropdown-company__ref-link,
           .nav-dropdown-careers__ref-link,
@@ -85,7 +88,7 @@
         justify-content: end;
         align-items: start;
         text-align: left;
-        min-height: 94%;
+        min-height: 85%;
         gap: 2em 0;
         padding-top: 5em;
         &__header {
