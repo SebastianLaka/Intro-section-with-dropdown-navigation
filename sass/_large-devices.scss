@@ -5,7 +5,7 @@
 @media (min-width: 992px) {
   .site-container {
     height: 100lvh;
-    padding: .5em 2em 0 2em;
+    padding: 0.5em 2em 0 2em;
     gap: 0;
     .nav {
       @include flex-between;
@@ -30,23 +30,23 @@
           .dropdown-company-features,
           .dropdown-company-options {
             display: none;
-            transition: color .3s; 
+            transition: color 0.3s;
             padding: 1em 0 0 0;
-          } 
-          .active-dropdown{
+          }
+          .active-dropdown {
             display: block;
           }
           .nav-dropdown-features__ref-link,
           .nav-dropdown-company__ref-link,
           .nav-dropdown-careers__ref-link,
-          .nav-dropdown-about__ref-link{
-            padding: 0 .5em;
-            transition: color .3s, font-weight .3s;
+          .nav-dropdown-about__ref-link {
+            padding: 0 0.5em;
+            transition: color 0.3s, font-weight 0.3s;
           }
           .nav-dropdown-features__ref-link:hover,
           .nav-dropdown-company__ref-link:hover,
           .nav-dropdown-careers__ref-link:hover,
-          .nav-dropdown-about__ref-link:hover{
+          .nav-dropdown-about__ref-link:hover {
             color: $primary-black;
             font-weight: $bold-weight;
           }
@@ -57,17 +57,16 @@
           &__login,
           &__register {
             width: 100%;
-            transition: color .3s, font-weight .3s, border .3s;
+            transition: color 0.3s, font-weight 0.3s, border 0.3s;
           }
           &__login:hover,
-          &__register:hover{
+          &__register:hover {
             color: $primary-black;
             font-weight: $bold-weight;
           }
-          &__register:hover{
-            border: .125em solid $primary-black;
+          &__register:hover {
+            border: 0.125em solid $primary-black;
           }
-          
         }
       }
     }
@@ -75,7 +74,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       padding: 2em 0 0 0;
-     
+    gap: 0 3em;
       &__image-desktop {
         grid-column: 2/3;
         grid-row: 0/1;
@@ -85,34 +84,39 @@
       .description-container {
         grid-column: 1/2;
         grid-row: 1/2;
+        height: 92.5%;
+        display: flex;
+        flex-direction: column;
         justify-content: end;
-        align-items: start;
-        text-align: left;
-        min-height: 85%;
-        gap: 2em 0;
-        padding-top: 5em;
-        &__header {
-          font-size: 4rem;
-          padding-right: 1.25em;
-        }
-        &__description{
-            min-width: 45ch;
+        gap: 4.25em 0;
+        .description-container-content {
+          align-items: start;
+          gap: 3em 0;
+          &__header {
+            font-size: 5.1rem;
+            line-height: 110%;
+            text-align: left;
+          }
+          &__description {
+            max-width: 45ch;
             padding: 0;
-        }
-        &__button{
-          transition: color .3s, background-color .3s, border .3s;
-        }
-        &__button:hover{
-          color: $primary-black;
-          background-color: $primary-White;
-          border: .1em solid $primary-black;
+            text-align: left;
+          }
+          &__button {
+            transition: color 0.3s, background-color 0.3s, border 0.3s;
+          }
+          &__button:hover {
+            color: $primary-black;
+            background-color: $primary-White;
+            border: 0.1em solid $primary-black;
+          }
         }
         .logo-container {
-            justify-content: start;
-            gap: 0 3em;
-            padding: 0;
-            margin-top: auto;
-          }
+          justify-content: start;
+          gap: 0 3em;
+          padding-top: 5.5em;
+          padding-bottom: .5em;
+        }
       }
     }
   }
