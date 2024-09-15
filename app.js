@@ -2,7 +2,7 @@
 const burgerIcon = document.querySelector(".nav__hamburger-icon");
 const closeNavIcon = document.querySelector(".nav-container__close-icon");
 const navContainer = document.querySelector(".nav-container");
-const dropdownItem = document.querySelectorAll('[data-dropdown-item]');
+const dropdown = document.querySelectorAll('[data-dropdown]');
 
 burgerIcon.addEventListener("click", (e) => {
   if (e.target.tagName === "BUTTON") {
@@ -16,12 +16,14 @@ closeNavIcon.addEventListener("click", (e) => {
     navContainer.classList.add("hide-slider"); 
   }
 });
-dropdownItem.forEach(item => {
+dropdown.forEach(item => {
   item.addEventListener('click', e => {
- 
+    const dropdownMenu = item.querySelector('ul');
+    const dropdownItem = item.querySelector('[data-dropdown-item]')
+    console.log(dropdownItem);
     if (e.target.closest('li')) {
-      const dropdownMenu = item.querySelector('ul');
       dropdownMenu.classList.toggle('active-dropdown');
+      dropdownItem.classList.toggle('change-dropdown-item-color');
     }
   });
 });

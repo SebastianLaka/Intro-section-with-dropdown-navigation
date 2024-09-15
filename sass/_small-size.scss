@@ -108,6 +108,10 @@
     .active-dropdown{
       display: block;
     }
+    .change-dropdown-item-color{
+      color: $primary-black;
+      font-weight: $bold-weight;
+    }
     .dropdown-company-features {
       &--icon {
         padding: 0 1em 0 0;

@@ -178,6 +178,10 @@ ul, li {
 .site-container .nav-dropdown .active-dropdown {
   display: block;
 }
+.site-container .nav-dropdown .change-dropdown-item-color {
+  color: hsl(0, 0%, 8%);
+  font-weight: 700;
+}
 .site-container .nav-dropdown .dropdown-company-features--icon {
   padding: 0 1em 0 0;
 }
