@@ -115,18 +115,18 @@ ul, li {
   .site-container .nav .show-slider {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
-    -webkit-transition: -webkit-transform 0.5s ease;
-    transition: -webkit-transform 0.5s ease;
-    transition: transform 0.5s ease;
-    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   }
   .site-container .nav .hide-slider {
     -webkit-transform: translateX(1500px);
             transform: translateX(1500px);
-    -webkit-transition: -webkit-transform 0.5s ease;
-    transition: -webkit-transform 0.5s ease;
-    transition: transform 0.5s ease;
-    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   }
 }
 .site-container .nav-dropdown .nav-dropdown-features,
@@ -181,6 +181,14 @@ ul, li {
 .site-container .nav-dropdown .change-dropdown-item-color {
   color: hsl(0, 0%, 8%);
   font-weight: 700;
+}
+.site-container .nav-dropdown .dropdown-rotate-arrow {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 .site-container .nav-dropdown .dropdown-company-features--icon {
   padding: 0 1em 0 0;

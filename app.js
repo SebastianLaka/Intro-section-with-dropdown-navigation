@@ -20,10 +20,11 @@ dropdown.forEach(item => {
   item.addEventListener('click', e => {
     const dropdownMenu = item.querySelector('ul');
     const dropdownItem = item.querySelector('[data-dropdown-item]')
-    console.log(dropdownItem);
+    const dropdownArrowIcon = item.querySelector('[data-dropdown-arrow]')
     if (e.target.closest('li')) {
       dropdownMenu.classList.toggle('active-dropdown');
       dropdownItem.classList.toggle('change-dropdown-item-color');
+      dropdownArrowIcon.classList.toggle('dropdown-rotate-arrow');
     }
   });
 });
