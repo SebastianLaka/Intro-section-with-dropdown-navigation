@@ -250,7 +250,6 @@ ul, li {
   padding: 5.5em 0 0 0;
 }
 .site-container .site-body .description-container {
-  height: 25%;
   padding: 2em 1em 0 1em;
 }
 .site-container .site-body .description-container .description-container-content {
@@ -425,7 +424,7 @@ ul, li {
             flex-direction: column;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: end;
+            justify-content: flex-end;
     gap: 4em 0;
     padding: 2em 1em 0 0;
   }
@@ -436,7 +435,7 @@ ul, li {
     gap: 2.4em 0;
   }
   .site-container .site-body .description-container .description-container-content__header {
-    font-size: 3.75rem;
+    font-size: 4.75rem;
     line-height: 105%;
     text-align: left;
   }
@@ -455,11 +454,8 @@ ul, li {
     border: 0.1em solid hsl(0, 0%, 8%);
   }
   .site-container .site-body .description-container .logo-container {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
     gap: 0 3em;
-    padding-top: 5.5em;
+    padding-top: 3em;
     padding-bottom: 0.5em;
   }
 }
