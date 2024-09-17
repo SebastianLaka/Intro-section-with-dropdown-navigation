@@ -5,13 +5,13 @@ const navContainer = document.querySelector(".nav-container");
 const dropdown = document.querySelectorAll('[data-dropdown]');
 
 burgerIcon.addEventListener("click", (e) => {
-  if (e.target.tagName === "BUTTON") {
+  if (e.target.matches("button")) {
     navContainer.classList.remove("hide-slider");
     navContainer.classList.add("show-slider");
   }
 });
 closeNavIcon.addEventListener("click", (e) => {
-  if (e.target.tagName === "BUTTON") {
+  if (e.target.matches("button")) {
     navContainer.classList.remove("show-slider"); 
     navContainer.classList.add("hide-slider"); 
   }
@@ -19,8 +19,8 @@ closeNavIcon.addEventListener("click", (e) => {
 dropdown.forEach(item => {
   item.addEventListener('click', e => {
     const dropdownMenu = item.querySelector('ul');
-    const dropdownItem = item.querySelector('[data-dropdown-item]')
-    const dropdownArrowIcon = item.querySelector('[data-dropdown-arrow]')
+    const dropdownItem = item.querySelector('[data-dropdown-item]');
+    const dropdownArrowIcon = item.querySelector('[data-dropdown-arrow]');
     if (e.target.closest('li')) {
       dropdownMenu.classList.toggle('active-dropdown');
       dropdownItem.classList.toggle('change-dropdown-item-color');

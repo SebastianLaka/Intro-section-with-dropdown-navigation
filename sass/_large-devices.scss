@@ -78,22 +78,21 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       padding: 2em 0 0 0;
-      gap: 0 3em;
+      gap: 0 4em;
       &__image-desktop {
         grid-column: 2/3;
         grid-row: 0/1;
-        height: 80lvh;
-        width: 90%;
+        height: 90%;
       }
       .description-container {
         grid-column: 1/2;
         grid-row: 1/2;
-        height: 92.5%;
+        height: 90%;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         gap: 4em 0;
-        padding: 2em 1em 0 0;
+        padding: 2em 0 0 0;
         .description-container-content {
           align-items: start;
           gap: 2.4em 0;
@@ -117,9 +116,7 @@
           }
         }
         .logo-container {
-          gap: 0 3em;
-          padding-top: 3em;
-          padding-bottom: 0.5em;
+          gap: 0 3em;  
         }
       }
     }
@@ -129,7 +126,8 @@
   .site-container {
     .site-body {
       .description-container {
-        padding: 2em 1em 0 1em;
+        gap: 2em 0;
+        padding: 0em 1em;
         .description-container-content {
           &__header {
             font-size: 5.1rem;
